@@ -45,7 +45,7 @@ export default {
 
     try {
       const code = loadCodes().get(email);
-      if (!code) return reply(404, { error: 'We couldn’t find a code for that email. Check the address on your invite and try again.' });
+      if (!code) return reply(404, { error: 'We couldn’t find a code for that email. Check that you entered the email you used to sign up for PixVerse.' });
       return reply(200, { code });
     } catch {
       return reply(503, { error: 'Code lookup is temporarily unavailable. Please try again later.' });

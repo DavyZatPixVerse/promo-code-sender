@@ -1,6 +1,6 @@
 # PixVerse Creator Promo Codes
 
-Invitees enter the email on their invitation and receive their assigned promo code. The lookup is case insensitive. An assignment can be looked up again; actual redemption and usage limits are managed by PixVerse.
+Invited creators enter the email they used to sign up for PixVerse and receive their assigned promo code. The lookup is case insensitive. An assignment can be looked up again; actual redemption and usage limits are managed by PixVerse.
 
 ## Local preview
 
@@ -12,6 +12,8 @@ npm run dev
 ```
 
 Open http://127.0.0.1:4173 and try `creator@example.com`. It returns the dummy code `DEMO-PVX-2026`. There are no package dependencies.
+
+To test with your own local `PROMO_CODES_JSON.txt`, run `PROMO_CODES_JSON="$(cat PROMO_CODES_JSON.txt)" npm run dev` from the project directory. Use a JSON object in the file, with no surrounding shell quotes. The file is ignored by Git.
 
 ## Deploy to Vercel
 

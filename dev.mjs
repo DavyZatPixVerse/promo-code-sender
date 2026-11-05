@@ -6,7 +6,8 @@ import claim from './api/claim.js';
 const assets = new Map([
   ['/', ['index.html', 'text/html']],
   ['/styles.css', ['styles.css', 'text/css']],
-  ['/app.js', ['app.js', 'text/javascript']]
+  ['/app.js', ['app.js', 'text/javascript']],
+  ['/assets/pixverse-logo.svg', ['assets/pixverse-logo.svg', 'image/svg+xml']]
 ]);
 
 createServer(async (req, res) => {
