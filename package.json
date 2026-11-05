@@ -1,0 +1,7 @@
+{
+  "name": "promo-code-sender",
+  "private": true,
+  "type": "module",
+  "scripts": { "dev": "node --env-file-if-exists=.env.local dev.mjs" },
+  "engines": { "node": "22.x" }
+}
